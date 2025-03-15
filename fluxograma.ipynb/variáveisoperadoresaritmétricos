@@ -1,0 +1,572 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP1PVN/JU9G0iUYzN8ksrcf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/victorianuness/PA-2025/blob/main/fluxograma.ipynb/vari%C3%A1veisoperadoresaritm%C3%A9tricos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Cálculo de Média"
+      ],
+      "metadata": {
+        "id": "obQnjvqiXF1L"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n2HeosADWWPl",
+        "outputId": "28fb1d23-a2e6-4fbb-a4da-55e16c1efacf"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite a nota da P1: 28\n"
+          ]
+        }
+      ],
+      "source": [
+        "num1 = float(input(\"Digite a nota da P1: \"))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num2 = float(input(\"Digite a nota da P2: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nU4_W8mSYY7P",
+        "outputId": "048d1464-be15-4068-bdda-912d7ea4b9a8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite a nota da P2: 16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "media=(num1+num2)/2"
+      ],
+      "metadata": {
+        "id": "agLp9oz7Ysc1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"A sua média é {media}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tBDWZ4q8ZEig",
+        "outputId": "3bb20b10-94b9-4f5f-9ac5-9f799c8deeab"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A sua média é 22.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Conversão de Moeda"
+      ],
+      "metadata": {
+        "id": "h1hcgfZ2ZnJ6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cotacao = float(input('Digite cotação em dólar: '))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eHU605urZl1D",
+        "outputId": "49f19278-9ade-4078-97b1-0c466d1badd9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite cotação em dólar: 5.75\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valorreais = float(input('Digite o valor em reais: '))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fKfVpdy3aAs2",
+        "outputId": "e6a0e4b6-02dc-47a3-8405-727bc52d0d0c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o valor em reais: 200\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "resultado = (valorreais/cotacao)"
+      ],
+      "metadata": {
+        "id": "2jJHlbe1ad8v"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"O valor em dólares é {resultado} \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iNQ3NRYqa2p9",
+        "outputId": "c08f8b5f-ea67-4e3d-e4d3-a4e0c1f9a096"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O valor em dólares é 34.78260869565217 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Comissão"
+      ],
+      "metadata": {
+        "id": "8leXoDcmcBr2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valor = float(input(\"Digite o valor da peça: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hPYtAoI7cBYA",
+        "outputId": "50e10ef1-17e4-490e-f43c-dd71a4d6f963"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o valor da peça: 50\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "qntde =  float (input(\" Digite a quantidade de peças vendidas: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s1QSbICacrIH",
+        "outputId": "0f7ffb7b-4035-406d-e820-bd9c579f18e8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            " Digite a quantidade de peças vendidas: 15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "venda = valor*qntde\n",
+        "comissao = venda*5/100"
+      ],
+      "metadata": {
+        "id": "9Mkf_vlwdSx5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f'O valor total das vendas será de: {venda} ')\n",
+        "print(f\"Sua comissão será de {comissao}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dhkFG8DveHj0",
+        "outputId": "1f14a0a4-c937-42db-f47b-13a83a5183dd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O valor total das vendas será de: 750.0 \n",
+            "Sua comissão será de 37.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Custo do carro"
+      ],
+      "metadata": {
+        "id": "zByNpecnfKia"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valorcarro = float(input( \" Digite o valor do carro: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sOpovzSFfKF5",
+        "outputId": "cd8984bf-e81f-4b93-8f87-a078ab2de81e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            " Digite o valor do carro: 25.000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "imposto = (valorcarro*45/100) + valorcarro\n",
+        "valorfinal = (imposto*28/100) + imposto"
+      ],
+      "metadata": {
+        "id": "JEIixy3Bf3oo"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"O valor do imposto será de: {imposto}\")\n",
+        "print(f\"O custo para o consumidor será de: {valorfinal}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8nDsoD-uiVFH",
+        "outputId": "8ac68198-5545-4757-b480-b8b715f7ca98"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O valor do imposto será de: 36.25\n",
+            "O custo para o consumidor será de: 46.4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#  conversão de minutos e horas em segundos"
+      ],
+      "metadata": {
+        "id": "zXvwWx-HkRNg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hora = float(input('Digite a hora: '))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UZDWtDOakQ6Z",
+        "outputId": "77fe4905-699b-45ec-a15b-6b1e84ebe4cc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite a hora: 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "min = float(input('Digite os minutos: '))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pI1IxjSTlJoY",
+        "outputId": "0fda1d75-35af-46bc-8bf1-f43690f83fd9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite os minutos: 32\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "conv = hora+(min/60)"
+      ],
+      "metadata": {
+        "id": "AGB5SThrla3O"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f'A conversão de hora e minutos para segundos é de: {conv}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nqmoSW7rliOf",
+        "outputId": "b2941974-a8d8-4b98-8a33-55c16c10ee21"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A conversão de hora e minutos para segundos é de: 1.5333333333333332\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Hora extra de um funcionário"
+      ],
+      "metadata": {
+        "id": "-IxlWhKfmNTR"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "horatra = float(input('Digite as horas trabalhadas: '))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KTfGUIaJmi8d",
+        "outputId": "73a22fe2-ec41-421c-82e7-e7d00a5b7bf5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite as horas trabalhadas: 15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mintra = float(input(\"Digite os minutos trabalhados: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fm1S1dscmLGo",
+        "outputId": "69078d2e-fc76-439e-ea65-3b4a3f81f23a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite os minutos trabalhados: 45\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valortra = float(input('Digite quanto você ganha por hora: '))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FofmrySEoiF-",
+        "outputId": "800197ba-97ef-48d4-88ec-e87164fa7001"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite quanto você ganha por hora: 25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "conver = horatra+(mintra/60)\n",
+        "salario1 = (conver*valortra)\n",
+        "salario2 = (salario1*70/100)+salario1"
+      ],
+      "metadata": {
+        "id": "ixEoSCx6nKa8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"O valor pelas horas trabalhadas será de: {salario2:.2f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9d9IBzdOnv2d",
+        "outputId": "992ea16c-4227-425f-e54f-8c7124bf167f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O valor pelas horas trabalhadas será de: 669.38\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
